@@ -13,6 +13,8 @@ from config import (
     TG_BOT_WORKERS, 
     FORCE_SUB_CHANNEL1, 
     FORCE_SUB_CHANNEL2,
+    FORCE_SUB_CHANNEL3,
+    FORCE_SUB_CHANNEL4,
     CHANNEL_ID,
 )
 
@@ -38,23 +40,44 @@ class Bot(Client):
             try:
                 link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL1)
                 self.invitelink1 = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
+            except Exception as desah:
+                self.LOGGER(__name__).warning(desah)
                 self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
                 self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL1 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL1}")
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/VegetaSupports for support")
                 sys.exit()
-                
         if FORCE_SUB_CHANNEL2:
             try:
                 link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL2)
                 self.invitelink2 = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
+            except Exception as puki:
+                self.LOGGER(__name__).warning(puki)
                 self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
                 self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL2 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL2}")
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/vegetaSupports for support")
                 sys.exit()
+                
+        if FORCE_SUB_CHANNEL3:
+            try:
+                link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL3)
+                self.invitelink3 = link
+            except Exception as kontol
+                self.LOGGER(__name__).warning(kontol)
+                self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
+                self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL3 value and Make sure Bot is Admin in channel with Invite Users via Link Permission. Current Force Sub Channel Value: {FORCE_SUB_CHANNEL3}")
+                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/VegetaSupports for support")
+                sys.exit()
+                
+         if FORCE_SUB_CHANNEL4:
+             try:
+                 link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL4)
+                 self.invitelink4 = link
+             except Exception as memek
+                 self.LOGGER(__name__).warning(memek)
+                 self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
+                 self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL4 value and Make sure Bot is Admin in channel with Invite Users via Link Permission. Current Force Sub Channel Value: {FORCE_SUB_CHANNEL4}")
+                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/VegetaSupports for support")
+                 sys.exit()
         
         try:
             db_channel = await self.get_chat(CHANNEL_ID)
