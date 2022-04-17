@@ -1,0 +1,6 @@
+pyrogram
+TgCrypto
+Pyromod
+sqlalchemy
+psycopg2-binary
+feedparser
