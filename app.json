@@ -6,7 +6,7 @@
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/Randi356/File-sharing-dev/tree/main",
+  "repository": "https://github.com/Randi356/File-sharing-dev/tree/Master",
   "logo": "",
   "env": {
     "TG_BOT_TOKEN": {
