@@ -63,6 +63,8 @@ python3 main.py
 * `START_MESSAGE` Optional: start message of bot, use HTML
 * `FORCE_SUB_CHANNEL1` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
 * `FORCE_SUB_CHANNEL2` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
+* `FORCE_SUB_CHANNEL3` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
+* `FORCE_SUB_CHANNEL4` Optional: Forcesub Channel ID, leave 0 if ypu want disable force sub
 
 ### Extra Variables
 
